@@ -2,25 +2,100 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <article className="flex h-72 flex-col justify-between gap-2  p-6 font-slab font-normal">
-      <div>
-        <h1 className="text-4xl ">Contact</h1>
-
-        <div className="flex justify-between text-lg">
-          <p>Want to talk? Feel free to reach out</p>
-          <div>
-            <p>Email: terrencetaylor01@gmail.com</p>
-            <p>Location: Melbourne, Australia</p>
-          </div>
+    <section className="flex min-h-[50vh] flex-col gap-12 text-center">
+      <h1 className="text-5xl">Contact</h1>
+      <h2 className="text-2xl lg:text-3xl">Want to talk? Reach out</h2>
+      <span className="flex h-fit w-full flex-col items-center gap-12 lg:flex-row">
+        <a
+          href="mailto:terrencetaylor01@gmail.com"
+          className="w-auto rounded-[4rem] bg-white bg-opacity-[0.85] px-6 py-4 shadow-lg backdrop-blur-lg transition-transform  hover:scale-105 lg:px-12 lg:py-8 "
+        >
+          <p className="text-xl lg:text-3xl">
+            Email: terrencetaylor01@gmail.com
+          </p>
+        </a>
+        <div className="flex h-fit w-full flex-row justify-center items-center gap-12 ">
+          <a
+            href="google.com"
+            className="w-auto rounded-full bg-[#0075FF] bg-opacity-[0.7] p-6  shadow-lg  backdrop-blur-lg transition-transform hover:scale-105 "
+          >
+            <svg
+              className="h-12"
+              width="100%"
+              height="100%"
+              viewBox="0 0 46 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_10_530)">
+                <path
+                  d="M17.25 36.4167C9.00833 39.1 9.00833 31.625 5.75 30.6667M28.75 40.25V33.5417C28.75 31.625 28.9417 30.8583 27.7917 29.7083C33.1583 29.1333 38.3333 27.025 38.3333 18.2083C38.331 15.9178 37.4374 13.7182 35.8417 12.075C36.5901 10.0854 36.5212 7.88062 35.65 5.94166C35.65 5.94166 33.5417 5.36666 28.9417 8.43333C25.0455 7.41862 20.9545 7.41862 17.0583 8.43333C12.4583 5.36666 10.35 5.94166 10.35 5.94166C9.47884 7.88062 9.40994 10.0854 10.1583 12.075C8.56262 13.7182 7.669 15.9178 7.66667 18.2083C7.66667 27.025 12.8417 29.1333 18.2083 29.7083C17.0583 30.8583 17.0583 32.0083 17.25 33.5417V40.25"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_10_530">
+                  <rect width="46" height="46" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a
+            href="google.com"
+            className="w-auto rounded-full bg-[#0500FF] bg-opacity-[0.7] p-6 shadow-lg  backdrop-blur-lg transition-transform hover:scale-105 "
+          >
+            <svg
+              className="h-12"
+              width="100%"
+              height="100%"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_10_523)">
+                <path
+                  d="M8 12C8 10.9391 8.42143 9.92172 9.17157 9.17157C9.92172 8.42143 10.9391 8 12 8H36C37.0609 8 38.0783 8.42143 38.8284 9.17157C39.5786 9.92172 40 10.9391 40 12V36C40 37.0609 39.5786 38.0783 38.8284 38.8284C38.0783 39.5786 37.0609 40 36 40H12C10.9391 40 9.92172 39.5786 9.17157 38.8284C8.42143 38.0783 8 37.0609 8 36V12Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 22V32"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 16V16.02"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24 32V22"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M32 32V26C32 24.9391 31.5786 23.9217 30.8284 23.1716C30.0783 22.4214 29.0609 22 28 22C26.9391 22 25.9217 22.4214 25.1716 23.1716C24.4214 23.9217 24 24.9391 24 26"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </a>
         </div>
-      </div>
-      <div className=" max-w-sm text-sm opacity-60">
-        <p>
-          This site has been designed and Figma and coded by me. Built using
-          React.js and Tailwind CSS. Deployed on Cloudflare Pages. See the
-          source code here-{">"}
-        </p>
-      </div>
-    </article>
+      </span>
+    </section>
   );
 }

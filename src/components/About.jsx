@@ -1,24 +1,48 @@
 import React from "react";
 
+import sampleHeadshot from "../assets/sample-headshot.png";
+
 export default function About() {
   return (
-    <article className="p-6 font-slab font-light flex flex-col gap-4 pb-24">
-      <h1 className="text-4xl leading-normal">About</h1>
-      <div className=" flex [&>*]:max-w-sm">
-        <p>
-          Hi, I’m Terrence Taylor. A enthusiastic frontend developer based in
-          Melbourne, Australia. I am passionate in building responsive and
-          engaging digital experiences. Outside of coding I love fostering
-          animals, 3d modelling or listening to music.
-        </p>
-        <p>
-          As a frontend developer I have an awesome range within my skill set,
-          this includes HTML, CSS, JavaScript, React and Tailwind. On top of
-          this foundation I have worked with many different tools and
-          technologies including Figma, Github, Firebase, Cloudflare Pages and
-          Functions, and Vite.
-        </p>
+    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-10 text-base xl:text-xl">
+      <div>
+        <h1 className="text-5xl ">About</h1>
       </div>
-    </article>
+      <div className="flex flex-col items-center gap-12 lg:flex-row ">
+        <span className="block aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:hidden  lg:w-auto">
+          <img src={sampleHeadshot} />
+        </span>
+        <span className="w-auto rounded-[4rem] bg-white bg-opacity-80 px-12 py-8 shadow-lg  backdrop-blur-lg lg:w-[72%]">
+          <p>
+            Hi, I’m Terrence Taylor, an enthusiastic frontend developer
+            passionate about making responsive and engaging digital experiences.
+            <br />
+            <br />
+          </p>
+
+          <p>
+            I have a useful skill set including HTML, CSS and JavaScript, React,
+            TailwindCSS. With this foundation I can craft dynamic and compelling
+            interfaces helmed by clean code and cutting-edge techniques. I have
+            thrived in delivering projects as a team-player with my
+            opportunities to deliver projects as part of a team.
+          </p>
+        </span>
+        <span className="hidden aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">
+          <img src={sampleHeadshot} />
+        </span>
+      </div>
+      <div className="flex flex-col gap-2 lg:gap-0 lg:flex-row w-full items-center justify-between rounded-[4rem] bg-white bg-opacity-90 px-8 lg:px-12 py-4 lg:py-8 shadow-lg backdrop-blur-lg">
+        <h2 className="mr-6 w-fit xl:w-48">
+          My skills, technologies and tools:
+        </h2>
+        <div className="flex grow justify-center xl:mx-[15%]">
+          <img
+            className="w-full"
+            src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,python,cloudflare,firebase,figma&theme=light"
+          />{" "}
+        </div>
+      </div>
+    </section>
   );
 }

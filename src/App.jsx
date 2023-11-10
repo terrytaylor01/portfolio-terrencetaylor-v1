@@ -1,25 +1,17 @@
-import Body from "./components/Body";
-import Sidebar from "./components/Sidebar";
 import React from "react";
+import BlurredBackground from "./components/BlurredBackground";
+import Navbar from "./components/Navbar";
+import MainBody from "./components/MainBody";
 
 function App() {
-  const aboutRef = React.useRef();
-  const projectsRef = React.useRef();
-  const contactRef = React.useRef();
-
   return (
-    <main className="flex flex-col md:flex-row bg-[#F9F7F7]">
-      <Sidebar
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
-      <Body
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
-    </main>
+    <div className="font-urbanist relative font-light">
+      <BlurredBackground />
+      <div className="relative z-10 flex lg:flex-row flex-col">
+        <Navbar />
+        <MainBody />
+      </div>
+    </div>
   );
 }
 

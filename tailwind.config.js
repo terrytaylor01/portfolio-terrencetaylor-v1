@@ -4,7 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        slab: ["Roboto Slab", 'serif'],
+        urbanist: ["Urbanist", "sans"],
+      },
+      keyframes: {
+        breathe: {
+          "0%, 100%": { transform: "scale(1.1)" },
+          "50%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        breathe: "breathe 3s ease-in-out infinite",
       },
     },
   },
