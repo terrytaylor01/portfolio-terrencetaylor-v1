@@ -19,7 +19,7 @@ export default function ProjectArticle({
               alt="Screenshot of project"
             />
           </div>
-          <div className="min-h-[22rem] w-auto max-w-[85vw]  rounded-[4rem] bg-white bg-opacity-[0.85] px-6 py-8 text-base shadow-lg backdrop-blur-lg lg:w-[60%]  lg:px-12 lg:text-lg">
+          <div className="min-h-[22rem] w-auto max-w-[85vw]  rounded-[4rem] bg-white bg-opacity-[0.85]  px-6  py-8 text-base shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[60%]  lg:px-12 lg:text-lg">
             {body}
           </div>
           <span className="hidden  aspect-[400/320] h-[22rem] overflow-clip rounded-[4rem]  object-cover shadow-lg lg:w-auto  xl:block">
@@ -33,13 +33,13 @@ export default function ProjectArticle({
         <span className="flex gap-2  text-xl text-white lg:gap-12 lg:text-4xl ">
           <a
             href={codeLink}
-            className="rounded-full bg-[#0075FF] bg-opacity-70  px-8 py-4 text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105"
+            className="rounded-full bg-[#0075FF] bg-opacity-70 px-8 py-4  text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105 dark:bg-black dark:bg-opacity-40"
           >
             View code
           </a>
           <a
             href={deployLink}
-            className="rounded-full bg-[#0500FF] bg-opacity-70 px-8 py-4 text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105"
+            className="rounded-full bg-[#0500FF] bg-opacity-60 px-8 py-4 text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105"
           >
             View deployment
           </a>

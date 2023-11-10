@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="mb-16 flex min-h-[50vh] flex-col gap-12 text-center">
+    <section className="mb-16 flex min-h-[50vh] flex-col gap-12 text-center text-black dark:text-white dark:text-opacity-80">
       <h1 className="text-5xl">Contact</h1>
       <h2 className="text-2xl lg:text-3xl">Want to talk? Reach out</h2>
       <span className="flex h-fit w-full flex-col items-center gap-12 lg:flex-row">
         <a
           href="mailto:terrencetaylor01@gmail.com"
-          className="w-auto rounded-[4rem] bg-white bg-opacity-[0.85] px-6 py-4 shadow-lg backdrop-blur-lg transition-transform  hover:scale-105 lg:px-12 lg:py-8 "
+          className="w-auto rounded-[4rem] bg-white bg-opacity-[0.85] px-6  py-4 shadow-lg backdrop-blur-lg transition-all hover:scale-105 dark:bg-[#020214]  dark:bg-opacity-80 lg:px-12 lg:py-8 "
           draggable="false"
         >
           <p className="text-xl lg:text-3xl">
@@ -20,7 +20,7 @@ export default function Contact() {
             href="https://github.com/terrytaylor01"
             aria-label="Link to Terrence Taylor's GitHub page"
             target="_blank"
-            className="w-auto rounded-full bg-[#0075FF] bg-opacity-[0.7] p-6  shadow-lg  backdrop-blur-lg transition-transform hover:scale-105 "
+            className="w-auto rounded-full bg-[#0075FF] bg-opacity-50 p-6  shadow-lg  backdrop-blur-lg transition-transform hover:scale-105 "
           >
             <svg
               className="h-12"
@@ -50,7 +50,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/terrence-taylor-863ab71a7"
             aria-label="Link to Terrence Taylor's LinkedIn page"
             target="_blank"
-            className="w-auto rounded-full bg-[#0500FF] bg-opacity-[0.7] p-6 shadow-lg  backdrop-blur-lg transition-transform hover:scale-105 "
+            className="w-auto rounded-full bg-[#0500FF] bg-opacity-60 p-6 shadow-lg  backdrop-blur-lg transition-transform hover:scale-105 "
           >
             <svg
               className="h-12"

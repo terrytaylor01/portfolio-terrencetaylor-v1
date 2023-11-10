@@ -1,10 +1,13 @@
 import React from "react";
 
 import sampleHeadshot from "../assets/sample-headshot.png";
+import { ThemeContext } from "../App";
 
 export default function About() {
+
+  const isDark = React.useContext(ThemeContext)
   return (
-    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-10 text-base xl:text-xl">
+    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-10 text-base dark:text-white dark:text-opacity-80 xl:text-xl">
       <div>
         <h1 className="text-5xl ">About</h1>
       </div>
@@ -15,7 +18,7 @@ export default function About() {
             alt="Headshot of Terrence Taylor, what a stunning young man"
           />
         </span>
-        <span className="w-auto rounded-[4rem] bg-white bg-opacity-80 px-12 py-8 shadow-lg  backdrop-blur-lg lg:w-[72%]">
+        <span className="w-auto rounded-[4rem] bg-white bg-opacity-80 px-12 py-8 shadow-lg backdrop-blur-lg dark:bg-[#020214] transition-colors  dark:bg-opacity-80 lg:w-[72%]">
           <p>
             Hi, I’m Terrence Taylor, an enthusiastic frontend developer
             passionate about making responsive and engaging digital experiences.
@@ -38,14 +41,14 @@ export default function About() {
           />
         </span>
       </div>
-      <div className="flex w-full flex-col items-center justify-between gap-2 rounded-[4rem] bg-white bg-opacity-90 px-8 py-4 shadow-lg backdrop-blur-lg lg:flex-row lg:gap-0 lg:px-12 lg:py-8">
+      <div className="flex w-full flex-col items-center justify-between gap-2 rounded-[4rem] bg-white transition-colors dark:bg-[#020214] dark:bg-opacity-80 bg-opacity-90 px-8 py-4 shadow-lg backdrop-blur-lg lg:flex-row lg:gap-0 lg:px-12 lg:py-8">
         <h2 className="mr-6 w-fit xl:w-48">
           My skills, technologies and tools:
         </h2>
         <div className="flex grow justify-center xl:mx-[15%]">
           <img
             className="w-full"
-            src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,python,cloudflare,firebase,figma&theme=light"
+            src={isDark ? "https://skillicons.dev/icons?i=html,css,js,react,tailwind,python,cloudflare,firebase,figma&theme=dark" : "https://skillicons.dev/icons?i=html,css,js,react,tailwind,python,cloudflare,firebase,figma&theme=light"}
             alt="HTML, CSS, JavaScript, ReactJs, Tailwind CSS, Python, Cloudflare, Firebase, Figma"
           />{" "}
         </div>

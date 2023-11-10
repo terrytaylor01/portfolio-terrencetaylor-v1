@@ -6,7 +6,7 @@ import redditProject from "../assets/reddit-project.png";
 
 export default function Projects() {
   return (
-    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-6 text-base lg:gap-10 lg:px-10 xl:text-xl">
+    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-6 text-base text-black dark:text-white dark:text-opacity-80 lg:gap-10 lg:px-10 xl:text-xl">
       <div>
         <h1 className="text-5xl ">Projects</h1>
       </div>
