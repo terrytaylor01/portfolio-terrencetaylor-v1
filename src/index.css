@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+   
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+}

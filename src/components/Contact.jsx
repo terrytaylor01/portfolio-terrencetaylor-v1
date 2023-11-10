@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="flex min-h-[50vh] flex-col gap-12 text-center">
+    <section className="flex min-h-[50vh] flex-col gap-12 text-center mb-16">
       <h1 className="text-5xl">Contact</h1>
       <h2 className="text-2xl lg:text-3xl">Want to talk? Reach out</h2>
       <span className="flex h-fit w-full flex-col items-center gap-12 lg:flex-row">

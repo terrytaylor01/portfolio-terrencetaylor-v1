@@ -2,7 +2,17 @@ import React from "react";
 
 import brandLogo from "../assets/brand-logo.png";
 
-export default function Navbar() {
+export default function Navbar({ aboutRef, projectsRef, contactRef }) {
+  function scrollToRef(ref, blockVar) {
+    ref.current.scrollIntoView({ behavior: "smooth", block: blockVar });
+  }
+
+  function mobileScrollToRef(ref) {
+    let refPos = ref.current.getBoundingClientRect().top;
+    console.log(refPos);
+    document.body.scroll(0, refPos - window.innerHeight * 0.1);
+  }
+
   return (
     <>
       <div className="sticky left-0 top-0 hidden h-screen w-[10vw] items-center justify-center lg:flex ">
@@ -11,9 +21,21 @@ export default function Navbar() {
             <img className="w-full opacity-80" src={brandLogo} />
           </button>
           <ul className="flex flex-col items-center gap-3 text-base 2xl:text-lg">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <button onClick={() => scrollToRef(aboutRef, "center")}>
+                About
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToRef(projectsRef, "start")}>
+                Projects
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToRef(contactRef, "center")}>
+                Contact
+              </button>
+            </li>
           </ul>
           <div className="flex w-[2.25vw] flex-col gap-1 opacity-70">
             <a>
@@ -96,9 +118,19 @@ export default function Navbar() {
             <img className="max-h-full opacity-80" src={brandLogo} />
           </button>
           <ul className="mx-2 flex items-center gap-2 text-base 2xl:text-lg">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>
+              <button onClick={() => mobileScrollToRef(aboutRef)}>About</button>
+            </li>
+            <li>
+              <button onClick={() => mobileScrollToRef(projectsRef)}>
+                Projects
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToRef(contactRef, "center")}>
+                Contact
+              </button>
+            </li>
           </ul>
           <div className="flex w-20 gap-1 opacity-70">
             <a>
