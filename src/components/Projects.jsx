@@ -6,7 +6,7 @@ import redditProject from "../assets/reddit-project.png";
 
 export default function Projects() {
   return (
-    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-6 lg:gap-10 lg:px-10 text-base xl:text-xl">
+    <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-6 text-base lg:gap-10 lg:px-10 xl:text-xl">
       <div>
         <h1 className="text-5xl ">Projects</h1>
       </div>
@@ -21,17 +21,24 @@ export default function Projects() {
               </p>
               <br></br>
               <p>
-                This site involves serving dynamic content in the form of the
-                animal adoption profiles which is taken from a third party API
-                that the organisation uses for their profiles. To obscure their
-                API keys a backend API handler had to be created which was
-                implemented using Cloudflare’s edge functions
+                A 17+ page (not including dynamic pages) project encompassing
+                many aspects of the rescue. Creating this involved serving
+                dynamic content in the form of the animal adoption profiles
+                which is taken from a third party API that the organisation uses
+                for their profiles. To obscure their API keys a backend API
+                handler had to be created which was implemented using
+                Cloudflare’s edge functions
+              </p>{" "}
+              <br></br>
+              <p>
+                Built using React, TailwindCSS, Cloudflare Pages Functions and
+                Vite.
               </p>
             </>
           }
           imgLink={shProject}
-          codeLink={"google.com"}
-          deployLink={"google.com"}
+          codeLink={"https://google.com"}
+          deployLink={"https://google.com"}
         />
         <ProjectArticle
           title={"Keptit"}
@@ -48,6 +55,8 @@ export default function Projects() {
             </>
           }
           imgLink={redditProject}
+          codeLink={"https://google.com"}
+          deployLink={"https://google.com"}
         />
       </div>
     </section>

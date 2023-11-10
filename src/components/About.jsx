@@ -10,7 +10,10 @@ export default function About() {
       </div>
       <div className="flex flex-col items-center gap-12 lg:flex-row ">
         <span className="block aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:hidden  lg:w-auto">
-          <img src={sampleHeadshot} />
+          <img
+            src={sampleHeadshot}
+            alt="Headshot of Terrence Taylor, what a stunning young man"
+          />
         </span>
         <span className="w-auto rounded-[4rem] bg-white bg-opacity-80 px-12 py-8 shadow-lg  backdrop-blur-lg lg:w-[72%]">
           <p>
@@ -29,10 +32,13 @@ export default function About() {
           </p>
         </span>
         <span className="hidden aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">
-          <img src={sampleHeadshot} />
+          <img
+            src={sampleHeadshot}
+            alt="Headshot of Terrence Taylor, what a stunning young man"
+          />
         </span>
       </div>
-      <div className="flex flex-col gap-2 lg:gap-0 lg:flex-row w-full items-center justify-between rounded-[4rem] bg-white bg-opacity-90 px-8 lg:px-12 py-4 lg:py-8 shadow-lg backdrop-blur-lg">
+      <div className="flex w-full flex-col items-center justify-between gap-2 rounded-[4rem] bg-white bg-opacity-90 px-8 py-4 shadow-lg backdrop-blur-lg lg:flex-row lg:gap-0 lg:px-12 lg:py-8">
         <h2 className="mr-6 w-fit xl:w-48">
           My skills, technologies and tools:
         </h2>
@@ -40,6 +46,7 @@ export default function About() {
           <img
             className="w-full"
             src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,python,cloudflare,firebase,figma&theme=light"
+            alt="HTML, CSS, JavaScript, ReactJs, Tailwind CSS, Python, Cloudflare, Firebase, Figma"
           />{" "}
         </div>
       </div>
