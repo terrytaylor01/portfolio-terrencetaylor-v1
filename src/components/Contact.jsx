@@ -8,7 +8,7 @@ export default function Contact() {
       <span className="flex h-fit w-full flex-col items-center gap-12 lg:flex-row">
         <a
           href="mailto:terrencetaylor01@gmail.com"
-          className="w-auto rounded-[4rem] bg-white bg-opacity-[0.85] px-6  py-4 shadow-lg backdrop-blur-lg transition-all hover:scale-105 dark:bg-[#020214]  dark:bg-opacity-80 lg:px-12 lg:py-8 "
+          className="w-auto rounded-[4rem] bg-white bg-opacity-[0.8] px-6  py-4 shadow-lg backdrop-blur-lg transition-all hover:scale-105 dark:bg-[#020214]  dark:bg-opacity-80 lg:px-12 lg:py-8 "
           draggable="false"
         >
           <p className="text-xl lg:text-3xl">

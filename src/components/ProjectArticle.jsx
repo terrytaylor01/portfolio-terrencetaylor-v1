@@ -9,7 +9,7 @@ export default function ProjectArticle({
 }) {
   return (
     <article className="flex flex-col items-center justify-center gap-12">
-      <h2 className="text-center text-xl lg:text-3xl">{title}</h2>
+      <h2 className="text-center text-xl lg:text-3xl ">{title}</h2>
       <div className="flex flex-col gap-6 lg:gap-12">
         <div className="flex flex-col items-center gap-6 lg:gap-12 xl:flex-row">
           <div className="aspect-[400/320] w-full max-w-[85vw] overflow-clip rounded-[4rem] object-cover shadow-lg  lg:h-[22rem] lg:w-[60%] xl:hidden ">
@@ -19,7 +19,7 @@ export default function ProjectArticle({
               alt="Screenshot of project"
             />
           </div>
-          <div className="min-h-[22rem] w-auto max-w-[85vw]  rounded-[4rem] bg-white bg-opacity-[0.85]  px-6  py-8 text-base shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[60%]  lg:px-12 lg:text-lg">
+          <div className="min-h-[22rem] w-auto max-w-[85vw]  rounded-[4rem] bg-white bg-opacity-[0.8]  px-6  py-8 text-base shadow-lg backdrop-blur-xl transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[60%]  lg:px-12 lg:text-lg">
             {body}
           </div>
           <span className="hidden  aspect-[400/320] h-[22rem] overflow-clip rounded-[4rem]  object-cover shadow-lg lg:w-auto  xl:block">

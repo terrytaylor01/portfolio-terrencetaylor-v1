@@ -40,13 +40,13 @@ export default function MainBody({
           ></path>
         </svg>
       </button>
-      <span ref={aboutRef}>
+      <span className="scroll-m-[15vh] md:scroll-m-0" ref={aboutRef}>
         <About />
       </span>
-      <span ref={projectsRef}>
+      <span className="scroll-m-[12vh] md:scroll-m-[5vh]" ref={projectsRef}>
         <Projects />
       </span>
-      <span ref={contactRef}>
+      <span className="scroll-m-[12vh] md:scroll-m-0" ref={contactRef}>
         <Contact />
       </span>
       <span className="absolute bottom-0 right-0 ml-auto flex h-12 items-center justify-center text-sm text-black transition-colors dark:text-white md:bottom-5 md:right-5 lg:w-[20%]">
