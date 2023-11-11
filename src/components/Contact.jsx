@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="mb-16 flex min-h-[50vh] flex-col gap-12 text-center text-black dark:text-white dark:text-opacity-80">
+    <section className="mb-16 flex min-h-[50vh] w-full flex-col gap-12 text-center text-black dark:text-white dark:text-opacity-80">
       <h1 className="text-5xl">Contact</h1>
       <h2 className="text-2xl lg:text-3xl">Want to talk? Reach out</h2>
       <span className="flex h-fit w-full flex-col items-center gap-12 lg:flex-row">
         <a
           href="mailto:terrencetaylor01@gmail.com"
-          className="w-auto rounded-[4rem] bg-white bg-opacity-[0.8] px-6  py-4 shadow-lg backdrop-blur-lg transition-all hover:scale-105 dark:bg-[#020214]  dark:bg-opacity-80 lg:px-12 lg:py-8 "
+          className="w-fit rounded-[4rem] bg-white bg-opacity-[0.8] px-6 py-4  shadow-lg backdrop-blur-lg transition-all hover:scale-105 dark:bg-[#020214] dark:bg-opacity-80  md:whitespace-nowrap lg:px-12 lg:py-8 "
           draggable="false"
         >
           <p className="text-xl lg:text-3xl">

@@ -16,23 +16,23 @@ export default function Projects() {
           body={
             <>
               <p>
-                This site acts a connection point between the animal rescue
-                organisation and the community in which it operates.
+                Bridging the gap between the rescue organization and the
+                community, this site facilitates pet adoption profiles,
+                volunteer sign-ups, and educational resources.
               </p>
               <br></br>
               <p>
-                A 17+ page (not including dynamic pages) project encompassing
-                many aspects of the rescue. Creating this involved serving
-                dynamic content in the form of the animal adoption profiles
-                which is taken from a third party API that the organisation uses
-                for their profiles. To obscure their API keys a backend API
-                handler had to be created which was implemented using
-                Cloudflare’s edge functions
+                A 17 plus dynamic page project encompassing many aspects of the
+                rescue. Creating this involved serving dynamic content in the
+                form of the animal adoption profiles which is taken from a third
+                party API that the organisation uses for their profiles. To
+                obscure their API keys a backend API handler had to be created
+                which was implemented using Cloudflare’s edge functions
               </p>{" "}
               <br></br>
               <p>
-                Built using React, TailwindCSS, Cloudflare Pages Functions and
-                Vite.
+                Designed using Figma. Built using React, TailwindCSS, Cloudflare
+                Pages Functions and Vite.
               </p>
             </>
           }

@@ -19,8 +19,8 @@ export default function About() {
         </span>
         <span className="w-auto rounded-[4rem] bg-white bg-opacity-[0.8] px-12 py-8 shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214] dark:bg-opacity-80  md:h-[295px] lg:w-[72%]">
           <p>
-            Hi, I’m Terrence Taylor, an enthusiastic frontend developer
-            passionate about making responsive and engaging digital experiences.
+            Hi, I’m <b className="text-xl">Terrence Taylor</b>, an enthusiastic frontend developer
+            passionate about making responsive and engaging digital experiences. I am based in Melbourne, Australia.
             <br />
             <br />
           </p>
@@ -30,7 +30,7 @@ export default function About() {
             TailwindCSS. With this foundation I can craft dynamic and compelling
             interfaces helmed by clean code and cutting-edge techniques. I have
             thrived in delivering projects as a team-player with my
-            opportunities to deliver projects as part of a team.
+            opportunities to deliver projects as part of a team. FIX THIS SENTENCE
           </p>
         </span>
         <span className="hidden aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">
