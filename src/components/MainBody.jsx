@@ -23,7 +23,7 @@ export default function MainBody({
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="fill-none"
+          className="fill-none  "
           width="100%"
           height="100%"
           viewBox="0 0 24 24"
@@ -49,8 +49,8 @@ export default function MainBody({
       <span className="scroll-m-[12vh] md:scroll-m-0" ref={contactRef}>
         <Contact />
       </span>
-      <span className="absolute bottom-0 right-0 ml-auto flex h-12 items-center justify-center text-sm text-black transition-colors dark:text-white md:bottom-5 md:right-5 lg:w-[20%]">
-        <p className="text-right opacity-40">
+      <span className="absolute bottom-0 right-0 ml-auto flex h-12 items-center justify-center p-5 py-10 text-xs md:text-sm text-black transition-colors dark:text-white lg:w-[20%]">
+        <p className="text-right opacity-50">
           This website was designed in Figma and coded by me. Built using
           ReactJs and Tailwind CSS, deployed with Cloudflare Pages.{" "}
           <a

@@ -33,12 +33,14 @@ export default function ProjectArticle({
         <span className="flex gap-2  text-xl text-white lg:gap-12 lg:text-4xl ">
           <a
             href={codeLink}
+            target="_blank"
             className="rounded-full bg-[#0075FF] bg-opacity-70 px-8 py-4  text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105 dark:bg-black dark:bg-opacity-40"
           >
             View code
           </a>
           <a
             href={deployLink}
+            target="_blank"
             className="rounded-full bg-[#0500FF] bg-opacity-60 px-8 py-4 text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105"
           >
             View deployment
