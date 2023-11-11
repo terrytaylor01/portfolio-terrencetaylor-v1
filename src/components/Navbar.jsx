@@ -1,29 +1,28 @@
 import React from "react";
 
 import brandLogo from "../assets/brand-logo.png";
+import whiteBrandLogo from "../assets/brand-logo-white.png";
+import { ThemeContext } from "../App";
 
 export default function Navbar({ aboutRef, projectsRef, contactRef }) {
   function scrollToRef(ref, blockVar) {
     ref.current.scrollIntoView({ behavior: "smooth", block: blockVar });
   }
 
-  function mobileScrollToRef(ref) {
-    let refPos = ref.current.getBoundingClientRect().top;
-    console.log(refPos);
-    document.body.scroll(0, refPos - window.innerHeight * 0.1);
-  }
+  let isDark = React.useContext(ThemeContext);
 
   return (
     <>
       <div className="sticky left-0 top-0 hidden h-screen w-[10vw] items-center justify-center lg:flex ">
-        <nav className="hidden h-[75%] w-fit flex-col items-center justify-between rounded-full bg-white bg-opacity-90 py-3 shadow-lg backdrop-blur-lg dark:bg-[#020214] dark:bg-opacity-80 dark:text-white lg:flex">
+        {/* desktop nav */}
+        <nav className="hidden h-[75%] w-fit flex-col items-center justify-between rounded-full bg-white bg-opacity-80 py-3 shadow-lg backdrop-blur-lg dark:bg-[#020214] dark:bg-opacity-80 dark:text-white lg:flex">
           <button
             onClick={() => scrollToRef(aboutRef, "center")}
             aria-label="home"
           >
             <img
-              className="w-full opacity-80 mix-blend-normal dark:opacity-100 dark:mix-blend-plus-lighter dark:brightness-150"
-              src={brandLogo}
+              className="w-full max-w-[5.5rem] opacity-60 mix-blend-normal dark:opacity-80 dark:mix-blend-plus-lighter dark:brightness-150"
+              src={isDark ? whiteBrandLogo : brandLogo}
               alt="Terrence Taylor icon"
             />
           </button>
@@ -135,19 +134,25 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
         </nav>
       </div>
       <div className="sticky top-0 z-50 flex h-[10vh] w-screen items-center justify-center lg:hidden">
+        {/* mobile / small screen nav */}
         <nav className=" mx-4 flex h-[75%] w-full items-center justify-between rounded-full bg-white bg-opacity-80 px-3 shadow-lg backdrop-blur-lg dark:bg-[#020214] dark:bg-opacity-80 dark:text-white">
-          <button className="h-full">
+          <button
+            onClick={() => scrollToRef(aboutRef, "start")}
+            className="h-full"
+          >
             <img
-              className="max-h-full opacity-80 mix-blend-normal dark:opacity-100 dark:mix-blend-plus-lighter dark:brightness-150"
-              src={brandLogo}
+              className="ml-1 max-h-full max-w-[40px] opacity-30 mix-blend-normal dark:opacity-80 dark:mix-blend-plus-lighter dark:brightness-150"
+              src={isDark ? whiteBrandLogo : brandLogo}
             />
           </button>
           <ul className="mx-2 flex items-center gap-2 text-base 2xl:text-lg">
             <li>
-              <button onClick={() => mobileScrollToRef(aboutRef)}>About</button>
+              <button onClick={() => scrollToRef(aboutRef, "start")}>
+                About
+              </button>
             </li>
             <li>
-              <button onClick={() => mobileScrollToRef(projectsRef)}>
+              <button onClick={() => scrollToRef(projectsRef, "start")}>
                 Projects
               </button>
             </li>
