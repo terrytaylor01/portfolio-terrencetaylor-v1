@@ -14,8 +14,9 @@ export default function MainBody({
       return !prev;
     });
   }
+
   return (
-    <main className="flex w-full flex-col items-center gap-24 px-8 pb-12 pt-12 md:pl-24 md:pr-24 lg:pb-0 lg:pl-12 lg:pt-52">
+    <main className="flex w-full flex-col items-center gap-24 px-8 pb-12 pt-12 md:pl-24 md:pr-24 lg:pb-0 lg:pl-12 lg:pt-0">
       <button
         onClick={darkModeHandler}
         className="absolute right-0 top-20 w-20 p-5 drop-shadow-md md:top-0"
@@ -40,16 +41,19 @@ export default function MainBody({
           ></path>
         </svg>
       </button>
-      <span className="scroll-m-[15vh] md:scroll-m-0" ref={aboutRef}>
+      <h1 className="mt-6 text-left text-3xl opacity-80 dark:text-white md:mt-20  md:text-5xl lg:-mb-48">
+        Terrence Taylor - Frontend Developer
+      </h1>
+      <span className=" scroll-m-[15vh] md:scroll-m-0" ref={aboutRef}>
         <About />
       </span>
       <span className="scroll-m-[12vh] md:scroll-m-[5vh]" ref={projectsRef}>
         <Projects />
       </span>
-      <span className="scroll-m-[12vh] md:scroll-m-0" ref={contactRef}>
+      <span className=" scroll-m-[12vh] md:scroll-m-0" ref={contactRef}>
         <Contact />
       </span>
-      <span className="absolute bottom-0 right-0 ml-auto flex h-12 items-center justify-center p-5 py-10 text-xs md:text-sm text-black transition-colors dark:text-white lg:w-[20%]">
+      <span className="absolute bottom-0 right-0 ml-auto flex h-12 items-center justify-center p-5 py-10 text-xs text-black transition-colors dark:text-white md:text-sm lg:w-[20%]">
         <p className="text-right opacity-50">
           This website was designed in Figma and coded by me. Built using
           ReactJs and Tailwind CSS, deployed with Cloudflare Pages.{" "}

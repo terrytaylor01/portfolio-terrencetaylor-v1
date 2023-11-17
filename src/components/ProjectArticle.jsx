@@ -8,7 +8,7 @@ export default function ProjectArticle({
   deployLink,
 }) {
   return (
-    <article className="flex flex-col items-center justify-center gap-12">
+    <article className=" flex flex-col items-center justify-center gap-12">
       <h2 className="text-center text-xl lg:text-3xl ">{title}</h2>
       <div className="flex flex-col gap-6 lg:gap-12">
         <div className="flex flex-col items-center gap-6 lg:h-[25rem] lg:gap-12 xl:flex-row">

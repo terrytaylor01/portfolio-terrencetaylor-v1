@@ -3,7 +3,7 @@ import React from "react";
 export default function BlurredBackground() {
   return (
     <div className=" fixed z-0 h-screen w-screen bg-[#F3F9FF] blur-[2.25vw] dark:bg-[#20202b]   ">
-      <div className="absolute left-0 top-0 w-[20vw]  animate-breathe">
+      <div className="absolute left-0 top-0 w-[20vw]  animate-breathe delay-1000">
         <svg
           width="100%"
           height="100%"
@@ -68,7 +68,7 @@ export default function BlurredBackground() {
           />
         </svg>
       </div>
-      <div className="absolute bottom-[10vh] left-[12vw] w-[20vw] animate-breathe">
+      <div className="absolute bottom-[10vh] left-[12vw] w-[20vw] animate-breathe delay-500">
         <svg
           width="100%"
           height="100%"
@@ -77,7 +77,7 @@ export default function BlurredBackground() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            className="fill-[#92DEFF] transition-colors dark:fill-[#3b3b63]"
+            className="fill-[#92DEFF] transition-colors dark:fill-[#3b3b63] "
             fillRule="evenodd"
             clipRule="evenodd"
             d="M89.2879 281.475C56.3741 269.508 24.3604 252.998 8.64083 217.728C-6.15732 184.525 2.39098 145.995 12.6407 109.5C24.0774 68.7791 33.7419 20.2836 68.4082 4.92303C103.788 -10.7536 135.928 22.329 169.46 40.0137C215.704 64.4026 280.729 67.3176 294.435 124.128C309.486 186.509 279.966 262.056 231.922 298.905C189.079 331.765 136.935 298.797 89.2879 281.475Z"

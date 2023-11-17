@@ -17,7 +17,9 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
         {/* desktop nav */}
         <nav className="hidden h-[75%] w-fit flex-col items-center justify-between rounded-full bg-white bg-opacity-80 py-3 shadow-lg backdrop-blur-lg dark:bg-[#020214] dark:bg-opacity-80 dark:text-white lg:flex">
           <button
-            onClick={() => scrollToRef(aboutRef, "center")}
+            onClick={() => {
+              document.body.scrollTo(0, 0);
+            }}
             aria-label="home"
           >
             <img
@@ -137,7 +139,9 @@ export default function Navbar({ aboutRef, projectsRef, contactRef }) {
         {/* mobile / small screen nav */}
         <nav className=" mx-4 flex h-[75%] w-full items-center justify-between rounded-full bg-white bg-opacity-80 px-3 shadow-lg backdrop-blur-lg dark:bg-[#020214] dark:bg-opacity-80 dark:text-white">
           <button
-            onClick={() => scrollToRef(aboutRef, "start")}
+            onClick={() => {
+              document.body.scrollTo(0, 0);
+            }}
             className="h-full"
           >
             <img

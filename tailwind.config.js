@@ -9,12 +9,12 @@ export default {
       },
       keyframes: {
         breathe: {
-          "0%, 100%": { transform: "scale(1.1)" },
+          "0%, 100%": { transform: "scale(1.15)" },
           "50%": { transform: "scale(1)" },
         },
       },
       animation: {
-        breathe: "breathe 3s ease-in-out infinite",
+        breathe: "breathe 4s ease-in-out infinite",
       },
     },
   },
