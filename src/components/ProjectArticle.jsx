@@ -6,6 +6,7 @@ export default function ProjectArticle({
   imgLink,
   codeLink,
   deployLink,
+  deployTooltip,
 }) {
   return (
     <article className=" flex flex-col items-center justify-center gap-12">
@@ -38,11 +39,17 @@ export default function ProjectArticle({
           >
             View code
           </a>
+
           <a
             href={deployLink}
             target="_blank"
-            className="rounded-full bg-[#0500FF] bg-opacity-60 px-8 py-4 text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105"
+            className="group relative rounded-full bg-[#0500FF] bg-opacity-60 px-8 py-4 text-center shadow-lg backdrop-blur-lg transition-transform hover:scale-105"
           >
+            {deployTooltip && (
+              <div className="absolute -bottom-20 left-1/2 w-[70vw] -translate-x-[50%] rounded-lg bg-white bg-opacity-80  px-3 py-2  text-base text-black opacity-0 shadow-md transition-opacity group-hover:opacity-100 dark:bg-[#020214] dark:text-white md:-bottom-16 md:w-full">
+                {deployTooltip}
+              </div>
+            )}
             View deployment
           </a>
         </span>

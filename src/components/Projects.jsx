@@ -57,6 +57,7 @@ export default function Projects() {
           imgLink={redditProject}
           codeLink={"https://google.com"}
           deployLink={"https://google.com"}
+          deployTooltip={"username: test123@sample.io pw: qwerty123"}
         />
       </div>
     </section>
