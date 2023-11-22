@@ -4,7 +4,7 @@
 Welcome to the repository of my personal portfolio. This portfolio showcases my skills as a front-end developer and reflects my passion for creating modern, responsive, and engaging digital experiences.
 
 ## Deployment
-
+[View Live Deployment Here](https://portfolio-terrencetaylor.pages.dev/)
 
 ## Design and Aesthetics
 The portfolio was designed with a modern and beautiful aesthetic in mind, featuring a frosted glass / blurred background effect that adds a modern twist to traditional websites. It also includes a side navigation bar, demonstrating my ability to make modern and different design choices.
