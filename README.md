@@ -1,4 +1,4 @@
-# Front-End Developer Portfolio
+# Terrence Taylor - Front-End Developer Portfolio
 
 ## Overview
 Welcome to the repository of my personal portfolio. This portfolio showcases my skills as a front-end developer and reflects my passion for creating modern, responsive, and engaging digital experiences.
