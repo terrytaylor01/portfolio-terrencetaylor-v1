@@ -20,7 +20,7 @@ export default function Projects() {
               </p>
               <br></br>
               <p>
-                A 18+ page project encompassing many aspects of the rescue.
+                A 19+ page project encompassing many aspects of the rescue.
                 Creating this involved serving dynamic content in the form of
                 the animal adoption profiles which is taken from a third party
                 RESTful API that the organisation uses for their profiles. To
