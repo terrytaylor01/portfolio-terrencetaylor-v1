@@ -1,8 +1,6 @@
 import React from "react";
 import ProjectArticle from "./ProjectArticle";
 
-import shProject from "../assets/sh-project.png";
-import redditProject from "../assets/reddit-project.png";
 
 export default function Projects() {
   return (
@@ -36,7 +34,7 @@ export default function Projects() {
               </p>
             </>
           }
-          imgLink={shProject}
+          imgLink={"https://imgur.com/5ZQJxnu.png"}
           codeLink={"https://google.com"}
           deployLink={"https://google.com"}
         />
@@ -45,18 +43,27 @@ export default function Projects() {
           body={
             <>
               <p>
-                This project is a clone of popular social media site, Reddit.
+                This project is a clone of the Reddit homepage, it features a
+                list of posts in rows, with the ability to expand text posts to
+                see the body text, and image posts to preview the image.
               </p>
               <br></br>
               <p>
-                The development of this was to demonstrate my capabilities of
-                working on an enumulated large-scale commercial application
+                This project was a great opportunity for me to showcase my
+                skills in front-end development, particularly with React and
+                TailwindCSS. The challenge of replicating the functionality of
+                Reddit's homepage allowed me to demonstrate my proficiency in
+                creating intuitive and responsive user interfaces emulating a
+                large scale commercial product. The implementation of user
+                authentication and post filtering features required a deep
+                understanding of how to integrate with back-end services, a
+                skill that is crucial for any front-end developer.
               </p>
             </>
           }
-          imgLink={redditProject}
-          codeLink={"https://google.com"}
-          deployLink={"https://google.com"}
+          imgLink={"https://imgur.com/uFgXN8R.jpg"}
+          codeLink={"https://github.com/terrytaylor01/Klepit"}
+          deployLink={"https://klepit.pages.dev/"}
           deployTooltip={"username: test123@sample.io pw: qwerty123"}
         />
       </div>
