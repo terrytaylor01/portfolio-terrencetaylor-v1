@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectArticle from "./ProjectArticle";
 
-
 export default function Projects() {
   return (
     <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-6 text-base text-black dark:text-white dark:text-opacity-80 lg:gap-10 lg:px-10 xl:text-xl">
@@ -50,14 +49,15 @@ export default function Projects() {
               <br></br>
               <p>
                 This project was a great opportunity for me to showcase my
-                skills in front-end development, particularly with React and
-                TailwindCSS. The challenge of replicating the functionality of
+                skills in front-end development, particularly with React,
+                TailwindCSS as well as interfacing with a SQL database through
+                Supabase. The challenge of replicating the functionality of
                 Reddit's homepage allowed me to demonstrate my proficiency in
                 creating intuitive and responsive user interfaces emulating a
-                large scale commercial product. The implementation of user
-                authentication and post filtering features required a deep
-                understanding of how to integrate with back-end services, a
-                skill that is crucial for any front-end developer.
+                large commercial product. The implementation of user
+                authentication, post filtering, and voting features required a
+                deep understanding of how to integrate with back-end services, a
+                crucial aspect for any front-end developer.
               </p>
             </>
           }
