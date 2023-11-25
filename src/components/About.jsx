@@ -46,7 +46,7 @@ export default function About() {
         <h2 className="mr-6 w-fit xl:w-48">
           My skills, technologies and tools:
         </h2>
-        <div className="flex grow justify-center gap-4 ">
+        <div className="md:flex grow justify-center md:gap-4 gap-4 w-full items-center grid grid-cols-3 [&>*]:ml-auto [&>*]:mr-auto ">
           {/* <img
             className="h-16"
             src={

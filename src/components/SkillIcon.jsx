@@ -12,7 +12,7 @@ export default function SkillIcon({ isDark, skill, alt }) {
         }
         alt={alt}
       />
-      <div className="absolute -bottom-24 left-1/2 -translate-x-[50%] rounded-md  bg-white  bg-opacity-70 px-3 py-2 opacity-0 shadow-md  transition-opacity group-hover:opacity-100 dark:bg-[#020214] dark:text-white">
+      <div className="absolute hidden md:block -bottom-24 left-1/2 -translate-x-[50%] rounded-md  bg-white  bg-opacity-70 px-3 py-2 opacity-0 shadow-md  transition-opacity group-hover:opacity-100 dark:bg-[#020214] dark:text-white">
         <p>{alt}</p>
       </div>
     </div>
