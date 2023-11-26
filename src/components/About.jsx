@@ -1,6 +1,6 @@
 import React from "react";
 
-import sampleHeadshot from "../assets/sample-headshot.png";
+import headshot from "../assets/terrence-taylor2.jpg";
 import { ThemeContext } from "../App";
 import SkillIcon from "./SkillIcon";
 
@@ -11,33 +11,32 @@ export default function About() {
       <div>
         <h1 className="text-5xl  ">About</h1>
       </div>
-      <div className="flex flex-col items-center gap-12 lg:flex-row ">
-        <span className="block aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:hidden  lg:w-auto">
+      <div className="flex h-fit w-full flex-col items-center gap-12 lg:h-96 lg:flex-row">
+        <span className="block  w-fit  grow overflow-clip rounded-[4rem] object-cover shadow-lg lg:hidden  lg:w-auto ">
           <img
-            src={sampleHeadshot}
+            className="aspect-square  h-96  object-cover "
+            src={headshot}
             alt="Headshot of Terrence Taylor, what a stunning young man"
           />
         </span>
-        <span className="w-auto rounded-[4rem] bg-white bg-opacity-[0.8] px-12 py-6 shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214] dark:bg-opacity-80  md:h-[295px] lg:w-[72%]">
-          <p>
+        <div className="h-full w-auto grow rounded-[4rem] bg-white bg-opacity-[0.8] px-12 py-6 shadow-lg backdrop-blur-lg transition-colors  dark:bg-[#020214] dark:bg-opacity-80 lg:w-[72%]">
+          <p className="h-full">
             Hello, I’m Terrence Taylor, a dedicated front-end developer based in
             Melbourne, Australia. I’m passionate about creating responsive and
             engaging digital experiences that captivate users. My skill set
             includes HTML, CSS, JavaScript, React, and TailwindCSS. Leveraging
             these tools, I’m able to craft dynamic and compelling interfaces
             underpinned by clean code and cutting-edge techniques.
-            <br />
-            <br />
-          </p>
-          <p>
+            <br /> <br />
             I’ve thrived in team environments, successfully delivering projects
             through collaboration and shared vision. I’m always eager to learn,
             adapt, and contribute to the success of the team.
           </p>
-        </span>
-        <span className="hidden aspect-square h-full w-fit overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">
+        </div>
+        <span className="hidden  w-fit  grow overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">
           <img
-            src={sampleHeadshot}
+            className="aspect-square  h-96  object-cover "
+            src={headshot}
             alt="Headshot of Terrence Taylor, what a stunning young man"
           />
         </span>
@@ -46,7 +45,7 @@ export default function About() {
         <h2 className="mr-6 w-fit xl:w-48">
           My skills, technologies and tools:
         </h2>
-        <div className="md:flex grow justify-center md:gap-4 gap-4 w-full items-center grid grid-cols-3 [&>*]:ml-auto [&>*]:mr-auto ">
+        <div className="grid w-full grow grid-cols-3 items-center justify-center gap-4 md:flex md:gap-4 [&>*]:ml-auto [&>*]:mr-auto ">
           {/* <img
             className="h-16"
             src={
