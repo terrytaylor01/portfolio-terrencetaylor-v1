@@ -9,35 +9,6 @@ export default function Projects() {
       </div>
       <div className="flex flex-col items-center justify-center gap-12 lg:gap-24">
         <ProjectArticle
-          title={"Strong Hearts Sanctuary Website"}
-          body={
-            <>
-              <p>
-                Bridging the gap between the rescue organization and the
-                community, this site facilitates pet adoption profiles,
-                volunteer sign-ups, and educational resources.
-              </p>
-              <br></br>
-              <p>
-                A 19+ page project encompassing many aspects of the rescue.
-                Creating this involved serving dynamic content in the form of
-                the animal adoption profiles which is taken from a third party
-                RESTful API that the organisation uses for their profiles. To
-                obscure their API keys a backend API handler had to be created
-                which was implemented using Cloudflare’s edge functions
-              </p>{" "}
-              <br></br>
-              <p>
-                Designed using Figma. Built using React, TailwindCSS, Cloudflare
-                Pages Functions and Vite.
-              </p>
-            </>
-          }
-          imgLink={"https://imgur.com/5ZQJxnu.png"}
-          codeLink={"https://google.com"}
-          deployLink={"https://google.com"}
-        />
-        <ProjectArticle
           title={"Keptit"}
           body={
             <>
@@ -65,6 +36,35 @@ export default function Projects() {
           codeLink={"https://github.com/terrytaylor01/Klepit"}
           deployLink={"https://klepit.pages.dev/"}
           deployTooltip={"username: test123@sample.io pw: qwerty123"}
+        />
+        <ProjectArticle
+          title={"Strong Hearts Sanctuary Website"}
+          body={
+            <>
+              <p>
+                Bridging the gap between the rescue organization and the
+                community, this site facilitates pet adoption profiles,
+                volunteer sign-ups, and educational resources.
+              </p>
+              <br></br>
+              <p>
+                A 19+ page project encompassing many aspects of the rescue.
+                Creating this involved serving dynamic content in the form of
+                the animal adoption profiles which is taken from a third party
+                RESTful API that the organisation uses for their profiles. To
+                obscure their API keys a backend API handler had to be created
+                which was implemented using Cloudflare’s edge functions
+              </p>{" "}
+              <br></br>
+              <p>
+                Designed using Figma. Built using React, TailwindCSS, Cloudflare
+                Pages Functions and Vite.
+              </p>
+            </>
+          }
+          imgLink={"https://imgur.com/5ZQJxnu.png"}
+          codeLink={"https://github.com/terrytaylor01/strong-hearts-public"}
+          deployLink={"https://strong-hearts-website-gh.pages.dev/"}
         />
       </div>
     </section>

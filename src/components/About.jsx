@@ -58,6 +58,7 @@ export default function About() {
           <SkillIcon isDark={isDark} skill={"html"} alt={"HTML5"} />
           <SkillIcon isDark={isDark} skill={"css"} alt={"CSS3"} />
           <SkillIcon isDark={isDark} skill={"js"} alt={"JavaScript"} />
+          <SkillIcon isDark={isDark} skill={"ts"} alt={"TypeScript"} />
           <SkillIcon isDark={isDark} skill={"react"} alt={"React"} />
           <SkillIcon isDark={isDark} skill={"tailwind"} alt={"TailwindCSS"} />
           <SkillIcon isDark={isDark} skill={"supabase"} alt={"Supabase"} />
