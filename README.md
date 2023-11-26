@@ -24,3 +24,9 @@ Another interesting feature is the dark mode, which was implemented using React 
 This portfolio serves as a testament to my dedication to creating intuitive and aesthetically pleasing digital experiences. I look forward to bringing these skills and passion to future roles in front-end development.
 
 ## Screenshots
+
+![Home Page](https://imgur.com/10UngDS.png)
+![Home Page](https://imgur.com/wp3rvWV.png)
+
+
+
