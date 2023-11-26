@@ -19,18 +19,20 @@ export default function About() {
             alt="Headshot of Terrence Taylor, what a stunning young man"
           />
         </span>
-        <div className="h-full w-auto grow rounded-[4rem] bg-white bg-opacity-[0.8] px-12 py-6 shadow-lg backdrop-blur-lg transition-colors  dark:bg-[#020214] dark:bg-opacity-80 lg:w-[72%]">
-          <p className="h-full">
+        <div className="flex h-full w-auto grow items-center rounded-[4rem] bg-white bg-opacity-[0.8] p-4  py-6 shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[72%] xl:px-12">
+          <p className="h-fit">
             Hello, I’m Terrence Taylor, a dedicated front-end developer based in
             Melbourne, Australia. I’m passionate about creating responsive and
             engaging digital experiences that captivate users. My skill set
-            includes HTML, CSS, JavaScript, React, and TailwindCSS. Leveraging
-            these tools, I’m able to craft dynamic and compelling interfaces
-            underpinned by clean code and cutting-edge techniques.
+            includes HTML, CSS, JavaScript, TypeScript, React, and TailwindCSS.
+            Leveraging these tools, I’m able to craft dynamic and compelling
+            interfaces underpinned by clean code and cutting-edge techniques.
             <br /> <br />
-            I’ve thrived in team environments, successfully delivering projects
-            through collaboration and shared vision. I’m always eager to learn,
-            adapt, and contribute to the success of the team.
+            Within my projects I have thrived in team environments, successfully
+            delivering projects through collaboration and shared vision. I’m
+            always eager to learn, adapt, and contribute to the success of any
+            group I am apart of. I hope to be able to bring my work and
+            contributions to many more projects to come.
           </p>
         </div>
         <span className="hidden  w-fit  grow overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">
