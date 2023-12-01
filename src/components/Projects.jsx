@@ -9,7 +9,7 @@ export default function Projects() {
       </div>
       <div className="flex flex-col items-center justify-center gap-12 lg:gap-24">
         <ProjectArticle
-          title={"Keptit"}
+          title={"Klepit"}
           body={
             <>
               <p>
@@ -20,15 +20,15 @@ export default function Projects() {
               <br></br>
               <p>
                 This project was a great opportunity for me to showcase my
-                skills in front-end development, particularly with React,
-                TailwindCSS as well as interfacing with a SQL database through
-                Supabase. The challenge of replicating the functionality of
-                Reddit's homepage allowed me to demonstrate my proficiency in
-                creating intuitive and responsive user interfaces emulating a
-                large commercial product. The implementation of user
-                authentication, post filtering, and voting features required a
-                deep understanding of how to integrate with back-end services, a
-                crucial aspect for any front-end developer.
+                skills in front-end development, particularly with TypeScript,
+                React, as well as interfacing with a SQL database. Using Reddit
+                as a base showed how I can create intuitive and responsive user
+                interfaces emulating a large commercial product. Also with
+                robust and type-safe code through the use of TypeScript. The
+                implementation of user authentication, post filtering, and
+                voting features required a deep understanding of how to
+                integrate with back-end services, a crucial aspect for any
+                front-end developer.
               </p>
             </>
           }
