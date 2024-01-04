@@ -1,5 +1,6 @@
-import React from "react";
 import ProjectArticle from "./ProjectArticle";
+
+import simpliFramedImg from "../assets/simpliframed.webp";
 
 export default function Projects() {
   return (
@@ -8,6 +9,32 @@ export default function Projects() {
         <h1 className=" text-5xl ">Projects</h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-12 lg:gap-24">
+        <ProjectArticle
+          title={"SimpliFramed"}
+          body={
+            <>
+              <p>
+                Delivered a production-ready e-commerce store capable of
+                accepting orders and generating revenue. Made using NextJS and
+                Typescript. The site allows users to upload their own files to
+                order them as framed prints. <br /> Design included a unique
+                landing page with captivating scroll-based image animations,
+                enhancing user engagement and brand storytelling. Utilised
+                NextJS’ API routes to interact with BigCommerce's REST API,
+                ensuring a smooth ordering experience that effortlessly handles
+                product fetching, checkout generation and cart utilities.
+                Architected a robust image uploading and processing pipeline for
+                the user utilising third party S3 interfacing services, enabling
+                users to effortlessly upload custom images and receive
+                client-side feedback on resolution and sizing suitability.
+              </p>
+            </>
+          }
+          imgLink={simpliFramedImg}
+          codeLink={null}
+          deployLink={"https://simpliframed-webstore.vercel.app/"}
+        />
+
         <ProjectArticle
           title={"Klepit"}
           body={

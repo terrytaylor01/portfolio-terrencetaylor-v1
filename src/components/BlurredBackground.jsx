@@ -1,8 +1,6 @@
-import React from "react";
-
 export default function BlurredBackground() {
   return (
-    <div className=" fixed z-0 h-screen w-screen bg-[#F3F9FF] bg-gradient-to-bl from-[#F3F9FF] to-blue-200 blur-[2vw] dark:from-[#20202b] dark:to-[#282833] dark:bg-[#20202b]   ">
+    <div className=" fixed z-0 h-screen w-screen bg-[#F3F9FF] bg-gradient-to-bl from-[#F3F9FF] to-blue-100 blur-[2vw] saturate-150 dark:bg-[#20202b] dark:from-[#20202b] dark:to-[#282833]  ">
       <div className="absolute left-0 top-0 w-[20vw]  animate-breathe delay-1000">
         <svg
           width="100%"

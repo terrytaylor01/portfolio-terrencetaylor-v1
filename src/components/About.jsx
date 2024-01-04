@@ -1,6 +1,6 @@
 import React from "react";
 
-import headshot from "../assets/terrence-taylor2.jpg";
+import headshot from "../assets/terrence-taylor2.webp";
 import { ThemeContext } from "../App";
 import SkillIcon from "./SkillIcon";
 
@@ -14,12 +14,12 @@ export default function About() {
       <div className="flex h-fit w-full flex-col items-center gap-12 lg:h-96 lg:flex-row">
         <span className="block  w-fit  grow overflow-clip rounded-[4rem] object-cover shadow-lg lg:hidden  lg:w-auto ">
           <img
-            className="aspect-square  h-96  object-cover "
+            className="aspect-square  h-96  object-cover"
             src={headshot}
             alt="Headshot of Terrence Taylor, what a stunning young man"
           />
         </span>
-        <div className="flex h-full w-auto grow items-center rounded-[4rem] bg-white bg-opacity-[0.8] p-4  py-6 shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[72%] xl:px-12">
+        <div className="flex h-full w-auto grow items-center rounded-[4rem] bg-white bg-opacity-[0.8] p-5  py-6 shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[72%] xl:px-12">
           <p className="h-fit">
             Hello, I’m Terrence Taylor, a dedicated front-end developer based in
             Melbourne, Australia. I’m passionate about creating responsive and
@@ -62,11 +62,10 @@ export default function About() {
           <SkillIcon isDark={isDark} skill={"js"} alt={"JavaScript"} />
           <SkillIcon isDark={isDark} skill={"ts"} alt={"TypeScript"} />
           <SkillIcon isDark={isDark} skill={"react"} alt={"React"} />
+          <SkillIcon isDark={isDark} skill={"nextjs"} alt={"NextJS"} />
           <SkillIcon isDark={isDark} skill={"tailwind"} alt={"TailwindCSS"} />
-          <SkillIcon isDark={isDark} skill={"supabase"} alt={"Supabase"} />
           <SkillIcon isDark={isDark} skill={"python"} alt={"Python"} />
           <SkillIcon isDark={isDark} skill={"cloudflare"} alt={"Cloudflare"} />
-          <SkillIcon isDark={isDark} skill={"firebase"} alt={"Firebase"} />
           <SkillIcon isDark={isDark} skill={"figma"} alt={"Figma"} />
         </div>
       </div>
