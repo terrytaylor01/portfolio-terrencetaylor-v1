@@ -9,30 +9,25 @@ export default function About() {
   return (
     <section className="flex min-h-[60vh] max-w-[1240px] flex-col items-center justify-center gap-10 text-base dark:text-white dark:text-opacity-80 lg:pb-24 lg:pt-64 xl:text-xl">
       <div>
-        <h1 className="text-5xl  ">About</h1>
+        <h1 className="text-5xl opacity-60 ">About</h1>
       </div>
       <div className="flex h-fit w-full flex-col items-center gap-12 lg:h-96 lg:flex-row">
-        <span className="block  w-fit  grow overflow-clip rounded-[4rem] object-cover shadow-lg lg:hidden  lg:w-auto ">
+        <span className="block  w-fit  grow overflow-clip rounded-[4rem] border-2 border-white object-cover  shadow-lg lg:hidden lg:w-auto ">
           <img
-            className="aspect-square  h-96  object-cover"
+            className="aspect-square  h-96   object-cover"
             src={headshot}
             alt="Headshot of Terrence Taylor, what a stunning young man"
           />
         </span>
         <div className="flex h-full w-auto grow items-center rounded-[4rem] bg-white bg-opacity-[0.8] p-5  py-6 shadow-lg backdrop-blur-lg transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[72%] xl:px-12">
-          <p className="h-fit">
+          <p className="h-fit text-3xl tracking-tight font-thin">
             Hello, I’m Terrence Taylor, a dedicated front-end developer based in
             Melbourne, Australia. I’m passionate about creating responsive and
             engaging digital experiences that captivate users. My skill set
             includes HTML, CSS, JavaScript, TypeScript, React, and TailwindCSS.
             Leveraging these tools, I’m able to craft dynamic and compelling
             interfaces underpinned by clean code and cutting-edge techniques.
-            <br /> <br />
-            Within my projects I have thrived in team environments, successfully
-            delivering projects through collaboration and shared vision. I’m
-            always eager to learn, adapt, and contribute to the success of any
-            group I am apart of. I hope to be able to bring my work and
-            contributions to many more projects to come.
+        
           </p>
         </div>
         <span className="hidden  w-fit  grow overflow-clip rounded-[4rem] object-cover shadow-lg lg:block  lg:w-auto">

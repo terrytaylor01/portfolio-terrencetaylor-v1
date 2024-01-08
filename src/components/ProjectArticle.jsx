@@ -10,7 +10,7 @@ export default function ProjectArticle({
 }) {
   return (
     <article className=" flex flex-col items-center justify-center gap-12">
-      <h2 className="text-center text-xl lg:text-3xl ">{title}</h2>
+      <h2 className="text-center text-xl lg:text-3xl opacity-60">{title}</h2>
       <div className="flex flex-col gap-6 lg:gap-12">
         <div className="flex flex-col items-center gap-6 lg:min-h-[25rem] lg:gap-12 lg:flex-row">
           <div className=" aspect-[400/320] w-full max-w-[85vw] overflow-clip rounded-[4rem] object-cover shadow-lg  lg:h-[22rem] lg:w-[60%] lg:hidden ">
@@ -20,12 +20,12 @@ export default function ProjectArticle({
               alt="Screenshot of project"
             />
           </div>
-          <div className="h-full min-h-[22rem]  max-w-[85vw]  rounded-[4rem] bg-white bg-opacity-[0.8]  px-6  py-6 text-base shadow-lg backdrop-blur-xl transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[75%]  lg:px-12 lg:text-lg">
+          <div className="h-full min-h-[22rem]  max-w-[85vw]  rounded-[4rem] bg-white bg-opacity-[0.8]  px-6  py-8 text-lg shadow-lg backdrop-blur-xl transition-colors dark:bg-[#020214]  dark:bg-opacity-80 lg:w-[75%]  lg:px-12 lg:text-xl">
             {body}
           </div>
          
             <img
-              className="hidden h-full lg:min-h-[25rem] shrink-0  overflow-clip rounded-[4rem]  object-cover shadow-lg lg:w-[40%]  lg:block"
+              className="hidden h-full lg:min-h-[25rem] shrink-0  overflow-clip rounded-[4rem] border-2 border-white dark:border-[#020214]   object-cover shadow-lg lg:w-[40%]  lg:block"
               src={imgLink}
               alt="Screenshot of project"
             />

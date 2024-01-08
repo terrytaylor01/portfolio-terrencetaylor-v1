@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section className="flex min-h-[50vh] max-w-[1240px] flex-col items-center justify-center gap-6 text-base text-black dark:text-white dark:text-opacity-80 lg:gap-10 lg:px-10 xl:text-xl">
       <div>
-        <h1 className=" text-5xl ">Projects</h1>
+        <h1 className=" text-5xl opacity-60 ">Projects</h1>
       </div>
       <div className="flex flex-col items-center justify-center gap-12 lg:gap-24">
         <ProjectArticle
@@ -19,14 +19,7 @@ export default function Projects() {
                 Typescript. The site allows users to upload their own files to
                 order them as framed prints. <br /> Design included a unique
                 landing page with captivating scroll-based image animations,
-                enhancing user engagement and brand storytelling. Utilised
-                NextJS’ API routes to interact with BigCommerce's REST API,
-                ensuring a smooth ordering experience that effortlessly handles
-                product fetching, checkout generation and cart utilities.
-                Architected a robust image uploading and processing pipeline for
-                the user utilising third party S3 interfacing services, enabling
-                users to effortlessly upload custom images and receive
-                client-side feedback on resolution and sizing suitability.
+                enhancing user engagement and brand storytelling.
               </p>
             </>
           }
@@ -50,12 +43,7 @@ export default function Projects() {
                 skills in front-end development, particularly with TypeScript,
                 React, as well as interfacing with a SQL database. Using Reddit
                 as a base showed how I can create intuitive and responsive user
-                interfaces emulating a large commercial product. Also with
-                robust and type-safe code through the use of TypeScript. The
-                implementation of user authentication, post filtering, and
-                voting features required a deep understanding of how to
-                integrate with back-end services, a crucial aspect for any
-                front-end developer.
+                interfaces emulating a large commercial product.
               </p>
             </>
           }
@@ -78,14 +66,7 @@ export default function Projects() {
                 A 19+ page project encompassing many aspects of the rescue.
                 Creating this involved serving dynamic content in the form of
                 the animal adoption profiles which is taken from a third party
-                RESTful API that the organisation uses for their profiles. To
-                obscure their API keys a backend API handler had to be created
-                which was implemented using Cloudflare’s edge functions
-              </p>{" "}
-              <br></br>
-              <p>
-                Designed using Figma. Built using React, TailwindCSS, Cloudflare
-                Pages Functions and Vite.
+                RESTful API that the organisation uses for their profiles.
               </p>
             </>
           }

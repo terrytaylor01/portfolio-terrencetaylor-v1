@@ -41,7 +41,7 @@ export default function MainBody({
           ></path>
         </svg>
       </button>
-      <h1 className="mt-6 text-left text-3xl opacity-80 dark:text-white md:mt-20  md:text-5xl lg:-mb-48">
+      <h1 className="mt-6 text-left text-3xl opacity-60 dark:text-white md:mt-20  md:text-5xl lg:-mb-48">
         Terrence Taylor - Frontend Developer
       </h1>
       <span className=" scroll-m-[15vh] md:scroll-m-0" ref={aboutRef}>
