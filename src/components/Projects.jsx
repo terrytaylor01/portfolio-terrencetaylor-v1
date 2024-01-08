@@ -1,6 +1,8 @@
 import ProjectArticle from "./ProjectArticle";
 
 import simpliFramedImg from "../assets/simpliframed.webp";
+import strongHeartsImg from "../assets/stronghearts.webp";
+import klepitImg from "../assets/klepit.webp";
 
 export default function Projects() {
   return (
@@ -47,7 +49,7 @@ export default function Projects() {
               </p>
             </>
           }
-          imgLink={"https://imgur.com/uFgXN8R.jpg"}
+          imgLink={klepitImg}
           codeLink={"https://github.com/terrytaylor01/Klepit"}
           deployLink={"https://klepit.pages.dev/"}
           deployTooltip={"username: test123@sample.io pw: qwerty123"}
@@ -70,7 +72,7 @@ export default function Projects() {
               </p>
             </>
           }
-          imgLink={"https://imgur.com/5ZQJxnu.png"}
+          imgLink={strongHeartsImg}
           codeLink={"https://github.com/terrytaylor01/strong-hearts-public"}
           deployLink={"https://strong-hearts-website-gh.pages.dev/"}
         />
